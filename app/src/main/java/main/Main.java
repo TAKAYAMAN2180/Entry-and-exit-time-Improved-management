@@ -1,8 +1,13 @@
+package main;
+
 import javazoom.jl.decoder.JavaLayerException;
 import javazoom.jl.player.AudioDevice;
 import javazoom.jl.player.FactoryRegistry;
 import javazoom.jl.player.advanced.AdvancedPlayer;
 import org.apache.poi.ss.usermodel.*;
+import util.FelicaReader;
+import util.NoFoundReaderException;
+import util.OutputThread;
 
 import javax.swing.*;
 import java.awt.*;
@@ -31,7 +36,7 @@ public class Main extends JFrame implements ActionListener, WindowListener {
     //出席管理データの次に入力する列の番号を保持
     private int count = 0;
 
-    Main(boolean hasEntrance, String filePathOfBodyTemperatureSheet) {
+    public Main(boolean hasEntrance, String filePathOfBodyTemperatureSheet) {
         this.FILEPATH_OF_BODY_TEMPERATURE_SHEET = filePathOfBodyTemperatureSheet;
         this.IS_ENTRANCE = hasEntrance;
 

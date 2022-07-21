@@ -1,9 +1,13 @@
+package util;
+
 import com.sun.jna.Library;
 import com.sun.jna.Native;
 import com.sun.jna.Pointer;
 import javazoom.jl.decoder.JavaLayerException;
+import main.Main;
 
 import java.io.*;
+
 
 
 public class FelicaReader implements Runnable {

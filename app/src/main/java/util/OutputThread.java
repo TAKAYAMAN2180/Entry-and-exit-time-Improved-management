@@ -1,3 +1,6 @@
+package util;
+
+import main.Clerk;
 import org.apache.poi.ss.usermodel.*;
 
 import javax.swing.*;
@@ -11,7 +14,7 @@ public class OutputThread implements Runnable {
     private Clerk clerk;
     private int count;
 
-    OutputThread(File file, Clerk clerk,int count) {
+    public OutputThread(File file, Clerk clerk, int count) {
         this.file = file;
         this.clerk = clerk;
         this.count = count;
