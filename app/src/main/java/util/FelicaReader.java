@@ -86,13 +86,11 @@ public class FelicaReader implements Runnable {
                     }
                 } else {
                     try (InputStream is = new FileInputStream(new File("badMusic.mp3"))) {
-                        this.main.play(is);
+                        Music.Play(is);
                     } catch (FileNotFoundException fileNotFoundException) {
                         System.out.println("fileNotFoundException");
-                    } catch (JavaLayerException javaLayerException) {
-                        System.out.println("unsupportedAudioException");
-                    } catch (IOException ioexception) {
-                        ioexception.printStackTrace();
+                    } catch (Exception exception) {
+                        exception.printStackTrace();
                     }
                 }
                 //JOptionPane.showMessageDialog(this.main.getContentPane(), "学生証ではないか、正しく読み取りができていません。", "エラー", JOptionPane.ERROR_MESSAGE);

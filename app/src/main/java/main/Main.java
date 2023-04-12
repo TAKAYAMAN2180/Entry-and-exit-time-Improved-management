@@ -1,9 +1,6 @@
 package main;
 
-import javazoom.jl.decoder.JavaLayerException;
-import javazoom.jl.player.AudioDevice;
-import javazoom.jl.player.FactoryRegistry;
-import javazoom.jl.player.advanced.AdvancedPlayer;
+
 import org.apache.poi.ss.usermodel.*;
 import util.FelicaReader;
 import util.NoFoundReaderException;
@@ -22,6 +19,8 @@ import java.io.*;
 import java.net.URL;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+
+import util.Music;
 
 public class Main extends JFrame implements ActionListener, WindowListener {
 
@@ -293,22 +292,12 @@ public class Main extends JFrame implements ActionListener, WindowListener {
         threadForOutputThread.start();
 
         try (InputStream is = this.getClass().getResourceAsStream(musicFilePath)) {
-            play(is);
+            Music.Play(is);
         } catch (FileNotFoundException fileNotFoundException) {
             fileNotFoundException.printStackTrace();
-        } catch (JavaLayerException javaLayerException) {
-            System.out.println("unsupportedAudioException");
-        } catch (IOException ioexception) {
-            ioexception.printStackTrace();
+        } catch (Exception exception) {
+            exception.printStackTrace();
         }
-    }
-
-    public void play(InputStream mp3file) throws JavaLayerException {
-
-        AudioDevice device = FactoryRegistry.systemRegistry().createAudioDevice();
-        // create an MP3 player
-        AdvancedPlayer player = new AdvancedPlayer(mp3file, device);
-        player.play();
     }
 
     @Override

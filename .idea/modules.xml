@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Entry_and_exit_time_management_By_Gradle.iml" filepath="$PROJECT_DIR$/.idea/modules/Entry_and_exit_time_management_By_Gradle.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Entry_and_exit_time_management_By_Gradle.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Entry_and_exit_time_management_By_Gradle.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Entry_and_exit_time_management_By_Gradle.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Entry_and_exit_time_management_By_Gradle.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Entry_and_exit_time_management_By_Gradle.app.test.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Entry_and_exit_time_management_By_Gradle.app.test.iml" />
+    </modules>
+  </component>
+</project>
