@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: org.apache.poi:poi-excelant:5.2.0" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="org.apache.poi" artifactId="poi-excelant" version="5.2.0" />
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../../../Gradle/caches/modules-2/files-2.1/org.apache.poi/poi-excelant/5.2.0/14092c145f19d0a75ec0506f7a6d4dd561fdb69/poi-excelant-5.2.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../../../../Gradle/caches/modules-2/files-2.1/org.apache.poi/poi-excelant/5.2.0/a997eb454149ad0c72a023530b39ded197d21ded/poi-excelant-5.2.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
