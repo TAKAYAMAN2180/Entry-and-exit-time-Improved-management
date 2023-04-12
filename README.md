@@ -25,3 +25,8 @@ This app use the following API.
 <h1>Build</h1>
 This app is made Gradle and Java. So, in order to build this app, you 
 have to use <a href="https://gradle.org/">Gradle </a>.
+
+<h1>Details</h1>
+I explained the details on the following site. If you want to know more, please watch the site.
+
+[https://qiita.com/TAKAYAMAN2180/items/0d8ae7f98f732ac8ca02](https://qiita.com/TAKAYAMAN2180/items/0d8ae7f98f732ac8ca02)
